@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-eval-harness"
+version = "1.0.0"
+description = "Dependency-free RAG toolkit with built-in retrieval and answer-quality evaluation metrics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Arun Sreedhar" }]
+keywords = ["rag", "llm", "evaluation", "retrieval", "bm25", "vector-search"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
